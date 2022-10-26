@@ -1,3 +1,4 @@
+
 .logo{
     width: 50px;
     display: block;
@@ -148,7 +149,51 @@ section{
         .text{
 
         }
-
+    .footer{
+        width: 100%;
+        display: flex;
+        position: relative;
+        bottom: 0;
+        z-index: 4;
+        background-color: darkgray;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .logo2{
+        width:100%;
+        display: flex;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        position: relative;
+    }
+    .scapholder2{
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-self: center;
+        align-content: space-around;
+        align-items: center;
+        place-self: stretch center;
+        place-content: center;
+        gap: 5%;
+    }
+    .button{
+        display: inline;
+        font-size: 1.1rem;
+    }
+    #logo2{
+        height: 100px;
+        align-self: center;
+        justify-self: center;
+        place-self:  center stretch;
+    }
     #image-one{
         max-width: 170%;
         margin-left: -70%;
