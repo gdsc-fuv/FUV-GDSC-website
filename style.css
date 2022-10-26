@@ -1,7 +1,3 @@
-* {
-    margin:0;
-    padding:0;
-    }
 
 .logo{
     width: 50px;
@@ -23,7 +19,6 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 .container {
@@ -34,26 +29,23 @@ body{
 section{
     width: 100vw;
     height: 100vh;
-    /* flex: none; */
+    flex: none;
 }
 
-.menu_container{
+.menu{
+
     display: flex;
     width: 40%;
     align-items: center;
-    justify-content: center;
     /* justify-content: space-between; */
     gap: 60px
 }
 
-.video{
-    size: 100%;
-
+.menu_text{
+    size: 11
+    
 }
 
-#menu_text{
-    size: 11;
-}
 
     .home{
         display: inline;
@@ -82,9 +74,7 @@ section{
         display: block;
         align-self: center;
         z-index: -99;
-        top: 0;
-        background-color: aqua;
-        
+        top: 0
     }
 
 .grid-container-aboutus{
@@ -92,7 +82,7 @@ section{
     display: grid;
 
     position: absolute;
-    margin-top: 780px;
+    margin-top: 80%;
     top:0;
     z-index: 2;
     background-color: white;
@@ -102,8 +92,6 @@ section{
 
     grid-template-columns: 15% 35% 50%;
     grid-template-rows: 20% 40% 40%;
-
-    padding: 0;
 
 }
 
@@ -142,17 +130,14 @@ section{
         grid-row-start: 1;
         grid-row-end: 1;
         margin-left: 20%;
-        color: red;
-        font-weight: bold;
-
+    
         
     }
         .title-aboutus{
-            margin-top: 5%;
             align-self: center;
             font-size: 29;
-            width: 350px;
-            
+            width: 300px
+
         }
 
     .grid-element-aboutus-text{
@@ -160,12 +145,55 @@ section{
         grid-row-end: 4;
         grid-row-start: 2
         
-        
     }
-        .aboutus-description{
-            width: 80%;
-        }
+        .text{
 
+        }
+    .footer{
+        width: 100%;
+        display: flex;
+        position: relative;
+        bottom: 0;
+        z-index: 4;
+        background-color: darkgray;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-self: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .logo2{
+        width:100%;
+        display: flex;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        position: relative;
+    }
+    .scapholder2{
+        display: flex;
+        position: relative;
+        width: 100%;
+        align-self: center;
+        align-content: space-around;
+        align-items: center;
+        place-self: stretch center;
+        place-content: center;
+        gap: 5%;
+    }
+    .button{
+        display: inline;
+        font-size: 1.1rem;
+    }
+    #logo2{
+        height: 100px;
+        align-self: center;
+        justify-self: center;
+        place-self:  center stretch;
+    }
     #image-one{
         max-width: 170%;
         margin-left: -70%;
@@ -175,23 +203,17 @@ section{
         max-height: 80%;
     }
 
-/* .project-container{
-    margin-top: -200%;
-} */
-
 .grid-container-project{
 
     display: grid;
-    /* position: relative; */
-    margin-top: -1090px;
+    position: absolute;
+    /* margin-top: 200%; */
     justify-content: space-between;
     background-color: green;
     
 
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 20% 80%;
-
-    padding: 0;
 
     /* gap: 2% */
     
