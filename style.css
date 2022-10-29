@@ -24,12 +24,21 @@ body{
 .container {
     width: 100%;
     height: 100%;
+    position: relative;
+    margin-top: 0;
 }
 
 section{
     width: 100vw;
     height: 100vh;
     flex: none;
+    padding: 0%;
+    height: fit-content;
+
+}
+
+div{
+    margin-top: 0;
 }
 
 .menu{
@@ -82,20 +91,37 @@ section{
         display: block;
         align-self: center;
         z-index: -99;
-        top: 0
+        top: 0;
+        background-color: aquamarine;
     }
+
+.gif-container{
+    justify-content: center;
+}
+
+    .gif{
+        
+        /* object-fit:contain; */
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+
 
 .grid-container-aboutus{
 
     display: grid;
 
     position: absolute;
-    margin-top: 80%;
+    margin-top: auto;
+    margin-block-start: 86%;
     top:0;
     z-index: 2;
     background-color: white;
     width: 100%;
-    height: 100%;
+
+    max-height: 100%;
     gap: 2%;
 
     grid-template-columns: 15% 35% 50%;
@@ -106,7 +132,7 @@ section{
 
     .grid-element-image1{
         width: 100%;
-        height: 100%;
+        height: auto;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -136,18 +162,20 @@ section{
 
 
     .grid-element-title-aboutus{
+        
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 1;
+
         margin-left: 20%;
     
         
     }
         .title-aboutus{
             align-self: center;
-            font-size: 29;
-            width: 300px
+            font-size: 3vw;
+            width: 40vw;
 
         }
 
@@ -160,24 +188,122 @@ section{
         
     }
         .aboutus-text{
-            font-size: 2vmax;
+            font-size: 2vw;
         }
 
-    .footer{
-        width: 100%;
-        display: flex;
-        position: relative;
-        bottom: 0;
-        z-index: 4;
-        background-color: darkgray;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        justify-self: center;
-        flex-wrap: wrap;
-        flex-direction: row;
+
+    #image-one{
+        max-width: 170%;
+        margin-left: -70%;
     }
-    .logo2{
+    #image-two{
+        object-fit:contain;
+        position: absolute;
+        top: 0;
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+.grid-container-project{
+
+    display: grid;
+    position: absolute;
+    margin-top: auto;
+    margin-block-start: 134%;
+    top:0;
+
+    height: 100%;
+
+    justify-content: space-between;
+    background-color: white;
+    
+
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 20% 80%;
+
+    /* gap: 2% */
+    
+
+} 
+    .grid-element-title-project{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        display: inline;
+    }
+
+        .title-project{
+            margin-top: 6%;
+            font-size: 3vw;
+        }
+
+    .grid-element-image3{
+        width: 100%;
+        height: 100%;
+        display: inline;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .grid-element-image4{
+        
+        display: inline;
+        align-items: center;
+    }
+
+    #image-three{
+        width: 80%;
+        height: auto;
+        margin-left: 15%;
+        margin-top: 30%;
+        align-self: center;
+        
+    }
+
+    #image-five{
+        width: 80%;
+        height: auto;
+        margin-right: 5%;
+        margin-top: 30%;
+        align-self: center;
+        
+    }
+    #image-four{
+        width: 80%;
+        height: auto;
+        margin-left: 8%;
+    }
+
+    #caption-small{
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    #caption-large{
+        margin-top: 5%;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .project-description-small{
+        text-align: center;
+    }
+
+.footer{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+    background-color: darkgray;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    /* .logo2{
         width:100%;
         display: flex;
         align-self: center;
@@ -186,7 +312,7 @@ section{
         justify-self: center;
         justify-content: center;
         position: relative;
-    }
+    } */
     .scapholder2{
         display: flex;
         position: relative;
@@ -207,92 +333,4 @@ section{
         align-self: center;
         justify-self: center;
         place-self:  center stretch;
-    }
-    #image-one{
-        max-width: 170%;
-        margin-left: -70%;
-    }
-    #image-two{
-        object-fit:contain;
-        position: absolute;
-        top: 0;
-        max-width: 80%;
-        max-height: 80%;
-    }
-
-.grid-container-project{
-
-    display: grid;
-    position: absolute;
-    /* margin-top: 200%; */
-    justify-content: space-between;
-    background-color: green;
-    
-
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 20% 80%;
-
-    /* gap: 2% */
-    
-
-} 
-    .grid-element-title-project{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        text-align: center;
-        display: inline;
-    }
-
-        .title-project{
-            margin-top: 6%;
-        }
-
-    .grid-element-image3{
-        width: 100%;
-        height: 100%;
-        display: inline;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .grid-element-image4{
-        width: 100%;
-        height: 100%;
-        display: inline;
-    }
-
-    #image-three{
-        width: 80%;
-        margin-left: 15%;
-        margin-top: 30%;
-        align-self: center;
-        
-    }
-
-    #image-five{
-        width: 80%;
-        margin-right: 5%;
-        margin-top: 30%;
-        align-self: center;
-        
-    }
-    #image-four{
-        width: 90%;
-        margin-left: 5%;
-        height: 90%;
-    }
-
-    #caption-small{
-        margin-top: 5%;
-        text-align: center;
-    }
-
-    #caption-large{
-        margin-top: 5%;
-        text-align: center;
-        font-size: larger;
-    }
-
-    .project-description-small{
-        text-align: center;
     }
